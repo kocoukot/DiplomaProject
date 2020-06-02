@@ -1,0 +1,6 @@
+framework module Pods_StarWear {
+  umbrella header "Pods-StarWear-umbrella.h"
+
+  export *
+  module * { export * }
+}

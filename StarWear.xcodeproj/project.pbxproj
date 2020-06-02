@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A2431762476B14000AB988A /* PersistRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431752476B14000AB988A /* PersistRealm.swift */; };
+		3A2431782477E5EA00AB988A /* CommonFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431772477E5EA00AB988A /* CommonFuncs.swift */; };
+		3A24317924780DFE00AB988A /* Pods_StarWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E850D8F525CED6498E90BF /* Pods_StarWear.framework */; };
+		3A24317A24780DFE00AB988A /* Pods_StarWear.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57E850D8F525CED6498E90BF /* Pods_StarWear.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A24317D248003BC00AB988A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24317C248003BC00AB988A /* ModalViewController.swift */; };
+		3A2431812481282A00AB988A /* SizesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431802481282A00AB988A /* SizesTableViewCell.swift */; };
+		3A270D07247693F1002DBDE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D06247693F1002DBDE2 /* AppDelegate.swift */; };
+		3A270D09247693F1002DBDE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D08247693F1002DBDE2 /* SceneDelegate.swift */; };
+		3A270D0B247693F1002DBDE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D0A247693F1002DBDE2 /* ViewController.swift */; };
+		3A270D11247693F1002DBDE2 /* StarWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D0F247693F1002DBDE2 /* StarWear.xcdatamodeld */; };
+		3A270D13247693F2002DBDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A270D12247693F2002DBDE2 /* Assets.xcassets */; };
+		3A270D16247693F2002DBDE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A270D14247693F2002DBDE2 /* LaunchScreen.storyboard */; };
+		3A270D21247693F2002DBDE2 /* StarWearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D20247693F2002DBDE2 /* StarWearTests.swift */; };
+		3A270D2C247693F2002DBDE2 /* StarWearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D2B247693F2002DBDE2 /* StarWearUITests.swift */; };
+		3A270D54247694C3002DBDE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A270D53247694C3002DBDE2 /* Main.storyboard */; };
+		3A270D57247694D0002DBDE2 /* InformationDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D55247694D0002DBDE2 /* InformationDictionary.swift */; };
+		3A270D58247694D0002DBDE2 /* InfoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D56247694D0002DBDE2 /* InfoLoader.swift */; };
+		3A270D60247694D9002DBDE2 /* ItemCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D59247694D8002DBDE2 /* ItemCardViewController.swift */; };
+		3A270D61247694D9002DBDE2 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5A247694D9002DBDE2 /* CartTableViewCell.swift */; };
+		3A270D62247694D9002DBDE2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5B247694D9002DBDE2 /* CartViewController.swift */; };
+		3A270D63247694D9002DBDE2 /* CardsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5C247694D9002DBDE2 /* CardsCollectionViewCell.swift */; };
+		3A270D64247694D9002DBDE2 /* ItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */; };
+		3A270D65247694D9002DBDE2 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */; };
+		3A270D66247694D9002DBDE2 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5F247694D9002DBDE2 /* CategoryTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A270D1D247693F2002DBDE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A270CFB247693F1002DBDE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A270D02247693F1002DBDE2;
+			remoteInfo = StarWear;
+		};
+		3A270D28247693F2002DBDE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A270CFB247693F1002DBDE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A270D02247693F1002DBDE2;
+			remoteInfo = StarWear;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A24317B24780DFE00AB988A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A24317A24780DFE00AB988A /* Pods_StarWear.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A2431752476B14000AB988A /* PersistRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistRealm.swift; sourceTree = "<group>"; };
+		3A2431772477E5EA00AB988A /* CommonFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFuncs.swift; sourceTree = "<group>"; };
+		3A24317C248003BC00AB988A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		3A2431802481282A00AB988A /* SizesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesTableViewCell.swift; sourceTree = "<group>"; };
+		3A270D03247693F1002DBDE2 /* StarWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A270D06247693F1002DBDE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A270D08247693F1002DBDE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3A270D0A247693F1002DBDE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A270D10247693F1002DBDE2 /* StarWear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWear.xcdatamodel; sourceTree = "<group>"; };
+		3A270D12247693F2002DBDE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A270D15247693F2002DBDE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A270D17247693F2002DBDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A270D1C247693F2002DBDE2 /* StarWearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A270D20247693F2002DBDE2 /* StarWearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWearTests.swift; sourceTree = "<group>"; };
+		3A270D22247693F2002DBDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A270D27247693F2002DBDE2 /* StarWearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A270D2B247693F2002DBDE2 /* StarWearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWearUITests.swift; sourceTree = "<group>"; };
+		3A270D2D247693F2002DBDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A270D53247694C3002DBDE2 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3A270D55247694D0002DBDE2 /* InformationDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationDictionary.swift; sourceTree = "<group>"; };
+		3A270D56247694D0002DBDE2 /* InfoLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoLoader.swift; sourceTree = "<group>"; };
+		3A270D59247694D8002DBDE2 /* ItemCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCardViewController.swift; sourceTree = "<group>"; };
+		3A270D5A247694D9002DBDE2 /* CartTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		3A270D5B247694D9002DBDE2 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		3A270D5C247694D9002DBDE2 /* CardsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewController.swift; sourceTree = "<group>"; };
+		3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
+		3A270D5F247694D9002DBDE2 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		57E850D8F525CED6498E90BF /* Pods_StarWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDA8169DE27D2EC90673D47B /* Pods-StarWear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWear.release.xcconfig"; path = "Target Support Files/Pods-StarWear/Pods-StarWear.release.xcconfig"; sourceTree = "<group>"; };
+		E198F74ED7D1DDE154627648 /* Pods-StarWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWear.debug.xcconfig"; path = "Target Support Files/Pods-StarWear/Pods-StarWear.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A270D00247693F1002DBDE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A24317924780DFE00AB988A /* Pods_StarWear.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A270D19247693F2002DBDE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A270D24247693F2002DBDE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A2431742476992700AB988A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A270D5F247694D9002DBDE2 /* CategoryTableViewCell.swift */,
+				3A270D5C247694D9002DBDE2 /* CardsCollectionViewCell.swift */,
+				3A270D5A247694D9002DBDE2 /* CartTableViewCell.swift */,
+				3A2431772477E5EA00AB988A /* CommonFuncs.swift */,
+				3A2431802481282A00AB988A /* SizesTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3A270CFA247693F1002DBDE2 = {
+			isa = PBXGroup;
+			children = (
+				3A270D05247693F1002DBDE2 /* StarWear */,
+				3A270D1F247693F2002DBDE2 /* StarWearTests */,
+				3A270D2A247693F2002DBDE2 /* StarWearUITests */,
+				3A270D04247693F1002DBDE2 /* Products */,
+				52F7D307EF2F5B570EA1F817 /* Pods */,
+				993C1A3936409E38C7302F06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A270D04247693F1002DBDE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A270D03247693F1002DBDE2 /* StarWear.app */,
+				3A270D1C247693F2002DBDE2 /* StarWearTests.xctest */,
+				3A270D27247693F2002DBDE2 /* StarWearUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A270D05247693F1002DBDE2 /* StarWear */ = {
+			isa = PBXGroup;
+			children = (
+				3A2431742476992700AB988A /* Cells */,
+				3A270D06247693F1002DBDE2 /* AppDelegate.swift */,
+				3A24317C248003BC00AB988A /* ModalViewController.swift */,
+				3A270D08247693F1002DBDE2 /* SceneDelegate.swift */,
+				3A270D53247694C3002DBDE2 /* Main.storyboard */,
+				3A270D12247693F2002DBDE2 /* Assets.xcassets */,
+				3A270D14247693F2002DBDE2 /* LaunchScreen.storyboard */,
+				3A270D55247694D0002DBDE2 /* InformationDictionary.swift */,
+				3A270D56247694D0002DBDE2 /* InfoLoader.swift */,
+				3A270D17247693F2002DBDE2 /* Info.plist */,
+				3A270D0F247693F1002DBDE2 /* StarWear.xcdatamodeld */,
+				3A270D0A247693F1002DBDE2 /* ViewController.swift */,
+				3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */,
+				3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */,
+				3A270D59247694D8002DBDE2 /* ItemCardViewController.swift */,
+				3A270D5B247694D9002DBDE2 /* CartViewController.swift */,
+				3A2431752476B14000AB988A /* PersistRealm.swift */,
+			);
+			path = StarWear;
+			sourceTree = "<group>";
+		};
+		3A270D1F247693F2002DBDE2 /* StarWearTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A270D20247693F2002DBDE2 /* StarWearTests.swift */,
+				3A270D22247693F2002DBDE2 /* Info.plist */,
+			);
+			path = StarWearTests;
+			sourceTree = "<group>";
+		};
+		3A270D2A247693F2002DBDE2 /* StarWearUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A270D2B247693F2002DBDE2 /* StarWearUITests.swift */,
+				3A270D2D247693F2002DBDE2 /* Info.plist */,
+			);
+			path = StarWearUITests;
+			sourceTree = "<group>";
+		};
+		52F7D307EF2F5B570EA1F817 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E198F74ED7D1DDE154627648 /* Pods-StarWear.debug.xcconfig */,
+				CDA8169DE27D2EC90673D47B /* Pods-StarWear.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		993C1A3936409E38C7302F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57E850D8F525CED6498E90BF /* Pods_StarWear.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A270D02247693F1002DBDE2 /* StarWear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A270D30247693F2002DBDE2 /* Build configuration list for PBXNativeTarget "StarWear" */;
+			buildPhases = (
+				F032A3D91CB90D40D6A19CF1 /* [CP] Check Pods Manifest.lock */,
+				3A270CFF247693F1002DBDE2 /* Sources */,
+				3A270D00247693F1002DBDE2 /* Frameworks */,
+				3A270D01247693F1002DBDE2 /* Resources */,
+				277BB7E48F0B5D74CEA8B316 /* [CP] Embed Pods Frameworks */,
+				3A24317B24780DFE00AB988A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarWear;
+			productName = StarWear;
+			productReference = 3A270D03247693F1002DBDE2 /* StarWear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A270D1B247693F2002DBDE2 /* StarWearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A270D33247693F2002DBDE2 /* Build configuration list for PBXNativeTarget "StarWearTests" */;
+			buildPhases = (
+				3A270D18247693F2002DBDE2 /* Sources */,
+				3A270D19247693F2002DBDE2 /* Frameworks */,
+				3A270D1A247693F2002DBDE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A270D1E247693F2002DBDE2 /* PBXTargetDependency */,
+			);
+			name = StarWearTests;
+			productName = StarWearTests;
+			productReference = 3A270D1C247693F2002DBDE2 /* StarWearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A270D26247693F2002DBDE2 /* StarWearUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A270D36247693F2002DBDE2 /* Build configuration list for PBXNativeTarget "StarWearUITests" */;
+			buildPhases = (
+				3A270D23247693F2002DBDE2 /* Sources */,
+				3A270D24247693F2002DBDE2 /* Frameworks */,
+				3A270D25247693F2002DBDE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A270D29247693F2002DBDE2 /* PBXTargetDependency */,
+			);
+			name = StarWearUITests;
+			productName = StarWearUITests;
+			productReference = 3A270D27247693F2002DBDE2 /* StarWearUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A270CFB247693F1002DBDE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Anton;
+				TargetAttributes = {
+					3A270D02247693F1002DBDE2 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					3A270D1B247693F2002DBDE2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 3A270D02247693F1002DBDE2;
+					};
+					3A270D26247693F2002DBDE2 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 3A270D02247693F1002DBDE2;
+					};
+				};
+			};
+			buildConfigurationList = 3A270CFE247693F1002DBDE2 /* Build configuration list for PBXProject "StarWear" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = 3A270CFA247693F1002DBDE2;
+			productRefGroup = 3A270D04247693F1002DBDE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A270D02247693F1002DBDE2 /* StarWear */,
+				3A270D1B247693F2002DBDE2 /* StarWearTests */,
+				3A270D26247693F2002DBDE2 /* StarWearUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A270D01247693F1002DBDE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A270D54247694C3002DBDE2 /* Main.storyboard in Resources */,
+				3A270D16247693F2002DBDE2 /* LaunchScreen.storyboard in Resources */,
+				3A270D13247693F2002DBDE2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A270D1A247693F2002DBDE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A270D25247693F2002DBDE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277BB7E48F0B5D74CEA8B316 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWear/Pods-StarWear-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWear/Pods-StarWear-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWear/Pods-StarWear-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F032A3D91CB90D40D6A19CF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarWear-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A270CFF247693F1002DBDE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A270D63247694D9002DBDE2 /* CardsCollectionViewCell.swift in Sources */,
+				3A270D65247694D9002DBDE2 /* SubCategoryViewController.swift in Sources */,
+				3A270D60247694D9002DBDE2 /* ItemCardViewController.swift in Sources */,
+				3A2431762476B14000AB988A /* PersistRealm.swift in Sources */,
+				3A270D0B247693F1002DBDE2 /* ViewController.swift in Sources */,
+				3A270D07247693F1002DBDE2 /* AppDelegate.swift in Sources */,
+				3A270D11247693F1002DBDE2 /* StarWear.xcdatamodeld in Sources */,
+				3A270D57247694D0002DBDE2 /* InformationDictionary.swift in Sources */,
+				3A270D64247694D9002DBDE2 /* ItemsCollectionViewController.swift in Sources */,
+				3A270D58247694D0002DBDE2 /* InfoLoader.swift in Sources */,
+				3A270D09247693F1002DBDE2 /* SceneDelegate.swift in Sources */,
+				3A270D62247694D9002DBDE2 /* CartViewController.swift in Sources */,
+				3A270D66247694D9002DBDE2 /* CategoryTableViewCell.swift in Sources */,
+				3A24317D248003BC00AB988A /* ModalViewController.swift in Sources */,
+				3A270D61247694D9002DBDE2 /* CartTableViewCell.swift in Sources */,
+				3A2431812481282A00AB988A /* SizesTableViewCell.swift in Sources */,
+				3A2431782477E5EA00AB988A /* CommonFuncs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A270D18247693F2002DBDE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A270D21247693F2002DBDE2 /* StarWearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A270D23247693F2002DBDE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A270D2C247693F2002DBDE2 /* StarWearUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A270D1E247693F2002DBDE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A270D02247693F1002DBDE2 /* StarWear */;
+			targetProxy = 3A270D1D247693F2002DBDE2 /* PBXContainerItemProxy */;
+		};
+		3A270D29247693F2002DBDE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A270D02247693F1002DBDE2 /* StarWear */;
+			targetProxy = 3A270D28247693F2002DBDE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A270D14247693F2002DBDE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A270D15247693F2002DBDE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A270D2E247693F2002DBDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3A270D2F247693F2002DBDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A270D31247693F2002DBDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E198F74ED7D1DDE154627648 /* Pods-StarWear.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GP96NFRQX;
+				INFOPLIST_FILE = StarWear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A270D32247693F2002DBDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA8169DE27D2EC90673D47B /* Pods-StarWear.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GP96NFRQX;
+				INFOPLIST_FILE = StarWear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3A270D34247693F2002DBDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GP96NFRQX;
+				INFOPLIST_FILE = StarWearTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWear.app/StarWear";
+			};
+			name = Debug;
+		};
+		3A270D35247693F2002DBDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GP96NFRQX;
+				INFOPLIST_FILE = StarWearTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StarWear.app/StarWear";
+			};
+			name = Release;
+		};
+		3A270D37247693F2002DBDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GP96NFRQX;
+				INFOPLIST_FILE = StarWearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarWear;
+			};
+			name = Debug;
+		};
+		3A270D38247693F2002DBDE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6GP96NFRQX;
+				INFOPLIST_FILE = StarWearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StarWear;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A270CFE247693F1002DBDE2 /* Build configuration list for PBXProject "StarWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A270D2E247693F2002DBDE2 /* Debug */,
+				3A270D2F247693F2002DBDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A270D30247693F2002DBDE2 /* Build configuration list for PBXNativeTarget "StarWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A270D31247693F2002DBDE2 /* Debug */,
+				3A270D32247693F2002DBDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A270D33247693F2002DBDE2 /* Build configuration list for PBXNativeTarget "StarWearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A270D34247693F2002DBDE2 /* Debug */,
+				3A270D35247693F2002DBDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A270D36247693F2002DBDE2 /* Build configuration list for PBXNativeTarget "StarWearUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A270D37247693F2002DBDE2 /* Debug */,
+				3A270D38247693F2002DBDE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3A270D0F247693F1002DBDE2 /* StarWear.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3A270D10247693F1002DBDE2 /* StarWear.xcdatamodel */,
+			);
+			currentVersion = 3A270D10247693F1002DBDE2 /* StarWear.xcdatamodel */;
+			path = StarWear.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3A270CFB247693F1002DBDE2 /* Project object */;
+}
