@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A2431762476B14000AB988A /* PersistRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431752476B14000AB988A /* PersistRealm.swift */; };
 		3A2431782477E5EA00AB988A /* CommonFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431772477E5EA00AB988A /* CommonFuncs.swift */; };
-		3A24317924780DFE00AB988A /* Pods_StarWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E850D8F525CED6498E90BF /* Pods_StarWear.framework */; };
-		3A24317A24780DFE00AB988A /* Pods_StarWear.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57E850D8F525CED6498E90BF /* Pods_StarWear.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A24317D248003BC00AB988A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24317C248003BC00AB988A /* ModalViewController.swift */; };
 		3A2431812481282A00AB988A /* SizesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431802481282A00AB988A /* SizesTableViewCell.swift */; };
 		3A270D07247693F1002DBDE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D06247693F1002DBDE2 /* AppDelegate.swift */; };
@@ -31,6 +29,7 @@
 		3A270D64247694D9002DBDE2 /* ItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */; };
 		3A270D65247694D9002DBDE2 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */; };
 		3A270D66247694D9002DBDE2 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D5F247694D9002DBDE2 /* CategoryTableViewCell.swift */; };
+		3A7079A8248E93A400403419 /* Pods_StarWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7079A7248E93A400403419 /* Pods_StarWear.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3A24317A24780DFE00AB988A /* Pods_StarWear.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +91,7 @@
 		3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewController.swift; sourceTree = "<group>"; };
 		3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
 		3A270D5F247694D9002DBDE2 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		3A7079A7248E93A400403419 /* Pods_StarWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_StarWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57E850D8F525CED6498E90BF /* Pods_StarWear.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWear.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDA8169DE27D2EC90673D47B /* Pods-StarWear.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWear.release.xcconfig"; path = "Target Support Files/Pods-StarWear/Pods-StarWear.release.xcconfig"; sourceTree = "<group>"; };
 		E198F74ED7D1DDE154627648 /* Pods-StarWear.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWear.debug.xcconfig"; path = "Target Support Files/Pods-StarWear/Pods-StarWear.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A24317924780DFE00AB988A /* Pods_StarWear.framework in Frameworks */,
+				3A7079A8248E93A400403419 /* Pods_StarWear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +211,7 @@
 		993C1A3936409E38C7302F06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A7079A7248E93A400403419 /* Pods_StarWear.framework */,
 				57E850D8F525CED6498E90BF /* Pods_StarWear.framework */,
 			);
 			name = Frameworks;
@@ -576,17 +576,20 @@
 			baseConfigurationReference = E198F74ED7D1DDE154627648 /* Pods-StarWear.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6GP96NFRQX;
 				INFOPLIST_FILE = StarWear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = StarWearApp;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -595,17 +598,20 @@
 			baseConfigurationReference = CDA8169DE27D2EC90673D47B /* Pods-StarWear.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6GP96NFRQX;
 				INFOPLIST_FILE = StarWear/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kocoukot.StarWear;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = StarWearApp;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

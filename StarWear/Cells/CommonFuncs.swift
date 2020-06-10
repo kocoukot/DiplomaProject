@@ -17,6 +17,7 @@ class CommonHelpFuncs{
         // [price, oldPrice, discount]
         
         labelList[2].isHidden = false
+        labelList[2].text = tag
         tagView.isHidden = false
         
         if let itemOldPrice = Double(oldPrice){
@@ -37,5 +38,27 @@ class CommonHelpFuncs{
                 tagView.isHidden = true
             }
         }   
+    }
+    
+    func setSizesTable(sizeList: [SizesList], nameForSize: String, productInfo: ItemCards) -> [String]{
+        var sizes: [String] = []
+        if sizeList.count == 0 || sizeList.first?.sizeName == "Единый размер"  {
+            sizes = []
+        } else if sizeList[0].sizeName.contains("лет") || sizeList[0].sizeName.contains("года"){
+            sizes = ["1-2 лет","3 года","4 года","5 лет","6 лет","7 лет","8 лет","9-10 лет","11-12 лет"]
+        } else if sizeList[0].sizeName.contains("см") || sizeList[0].sizeName.contains("года"){
+            sizes = ["85 см","95 см","105 см","115 см","120 см"]
+        } else if nameForSize == "Обувь" {
+            sizes = ["36","37","38","39","40","41","42","43","44","45"]
+        } else if nameForSize == "Носки" {
+            sizes = ["36/38", "39/40", "41-43"]
+        } else if nameForSize == "Мужская" || nameForSize == "Женская" {
+            sizes = ["XXS", "XS","S","M", "L", "XL","XXL"]
+        } else{
+            for i in 0..<(productInfo.offers.count ?? 0){
+                sizes.append(sizeList[i].sizeName)
+            }
+        }
+        return sizes
     }
 }

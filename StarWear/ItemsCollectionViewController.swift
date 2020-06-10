@@ -6,12 +6,12 @@ class ItemsCollectionViewController: UIViewController {
     var subcategoryID = ""
     var viewTitle = ""
     
-    private var urlString = "https://blackstarwear.ru/index.php?route=api/v1/products&cat_id="
+    private var urlString = "index.php?route=api/v1/products&cat_id="
     
     @IBOutlet weak var itemsCollectionView: UICollectionView!
+
     private var categories: [ItemCards] = []
     var mainImageTemp: UIImage?
-    let sizes = [["XXS", "XS","S","M", "L", "XL","XXL"],["36","37","38","39","40","41","42","43","44","45"], ["1-2 лет","3 года","4 года","5 лет","6 лет","7 лет","8 лет","9-10 лет","11-12 лет"], ["36/38", "39/40", "41-43"], ["6","6+","7/8","7+/8+", "11","11 Pro","11 Pro Max","XR","XSMax (10SMax)", "X (10)/XS (10S)"], ["85 см","95 см","105 см","120 см","115 см"]]
     var nameForSize = ""
     
     
@@ -32,32 +32,11 @@ class ItemsCollectionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UICollectionViewCell, let index = itemsCollectionView.indexPath(for: cell), let vc = segue.destination as? ItemCardViewController, segue.identifier == "itemCard"{
             vc.productInfo = categories[index.row]
-            switch nameForSize{
-            case "Обувь":
-                vc.sizes = sizes[1]
-            case "Детская":
-                vc.sizes = sizes[2]
-            case "Носки":
-                vc.sizes = sizes[3]
-            case "Чехлы на телефоны":
-                vc.sizes = sizes[4]
-            case "Ремни":
-                vc.sizes = sizes[5]
-            default:
-                vc.sizes = sizes[0]
-            }
-            witchSize()
+            vc.nameForSize = nameForSize
             vc.categoryID = subcategoryID
             vc.urlImageList.append(categories[index.row].mainImageURL)
         }
     }
-    
-    func witchSize(){
-//        nameForSize.removeFirst(16)
-            print (nameForSize)
-        
-    }
-    
 }
 
 extension ItemsCollectionViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{

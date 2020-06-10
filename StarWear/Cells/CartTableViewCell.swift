@@ -23,6 +23,10 @@ class CartTableViewCell: UITableViewCell {
         sizeLabel.isHidden = false
     }
     
+    func infoCellSet(index: Int){
+        RealmDataOperations().setLabelInfo(index: index, sizeLabel: sizeLabel,productNameLabel: productNameLabel,productPriceLabel: productPriceLabel,productOldPriceLabel:productOldPriceLabel, productImageView:productImageView)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

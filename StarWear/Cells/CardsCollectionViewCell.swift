@@ -21,7 +21,6 @@ class CardsCollectionViewCell: UICollectionViewCell {
         self.layer.cornerRadius = 10
         backGroundView.layer.cornerRadius = 10
         tagView.layer.cornerRadius = tagView.frame.width / 2 - 10        
-        discountLabel.text = itemInfo.tag
         
         let labelList = [price!, oldPrice!, discountLabel!]
         

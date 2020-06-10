@@ -7,12 +7,8 @@
 //
 
 import UIKit
-protocol SelectedSizeDelegate {
-    func selectedSize(size: String)
-}
 
 class SizesTableViewCell: UITableViewCell {
-    var delegate:SelectedSizeDelegate?
     
     @IBOutlet weak var sizeLabel: UILabel!
     @IBOutlet weak var amountLabel: UILabel!
@@ -21,7 +17,6 @@ class SizesTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        delegate?.selectedSize(size: sizeLabel.text!)
     }
     
     func setTableInfo(_ allSizes:String,_ sizesHave: [SizesList]){

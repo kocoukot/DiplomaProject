@@ -45,13 +45,15 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
     var imagesList: [UIImage] = []
     var sizeList: [SizesList] = []
     var urlImageList: [String] = []
-    var sizeIsChoosenBool = false
-    var hasSizes = true
+    private var sizeIsChoosenBool = false
+    private var hasSizes = true
+    private var showSizes = true
     var selectedSize = ""
     var categoryID = ""
     let yCoord = UIScreen.main.bounds.size.height
     let sizeWidth = UIScreen.main.bounds.size.width
-    var sizes:[String] = []
+    private var sizes:[String] = []
+    var nameForSize = "" 
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,15 +78,19 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         
-        self.sizeTable.reloadData()
-        if sizeList.count == 0 || sizeList.first?.sizeName == "Единый размер"  {
+        sizes = CommonHelpFuncs().setSizesTable(sizeList: sizeList, nameForSize: nameForSize,productInfo: productInfo! )
+        if sizes == []{
             hasSizes = false
             sizeButton.isHidden = true
-        }else{
-            for i in 0..<productInfo!.productImages.count{
-                urlImageList.append(productInfo!.productImages[i]["imageURL"]! as! String)
-            }
         }
+        
+        sizeHeightConstr.constant = CGFloat(45 * CGFloat(sizes.count) + CGFloat(20)) + (self.tabBarController?.tabBar.frame.height)!
+        self.sizeTable.reloadData()
+        
+        for i in 0..<productInfo!.productImages.count{
+            urlImageList.append(productInfo!.productImages[i]["imageURL"]! as! String)
+        }
+        
         itemCardSetInfo()
         itemImagePageControl.numberOfPages = urlImageList.count 
         itemImagePageControl.currentPage = 0
@@ -101,7 +107,6 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
     }
     
     private func itemPriceSet(){
-        discountLabel.text = productInfo?.tag
         itemPriceLabel.text = "\(Int(productInfo?.price ?? 0)) руб."
         let labelList = [itemPriceLabel!, itemOldPriceLabel!, discountLabel!]
         CommonHelpFuncs().priceUpdate(productInfo!.oldPrice, (productInfo?.tag)!, labelList, tagView)
@@ -130,20 +135,24 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func chooseSizeButton(_ sender: Any) {
         sizesShow()
+        showSizes = true
     }
     
     @IBAction func addToCart(_ sender: Any) {
+        showSizes = false
         if !hasSizes{
             addedToCart()
-        } else {
+        } else if sizeIsChoosenBool{
+            addedToCart()
+        } else{
             sizesShow()
         }
     }
     
     private func sizesShow(){
         UIView.animate(withDuration: 0.6, animations: {
-            self.sizeConstraint.constant = self.yCoord - self.sizeView.frame.height - (self.tabBarController?.tabBar.frame.height)!
             self.blur.alpha = 1
+            self.sizeConstraint.constant = self.yCoord - self.sizeView.frame.height - (self.tabBarController?.tabBar.frame.height)!
             self.view.layoutIfNeeded()
         })
     }
@@ -157,17 +166,7 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func listSave(){
-        let saveProduct = SaveProduct()
-        saveProduct.name = productInfo!.name
-        saveProduct.price = productInfo!.price
-        saveProduct.oldPrice = productInfo!.oldPrice
-        saveProduct.imageURL = productInfo!.mainImageURL
-        saveProduct.size = selectedSize
-        saveProduct.categoryID = categoryID
-        saveProduct.itemID = productInfo!.IDkey
-        try! realm.write{
-            realm.add(saveProduct)
-        }
+        RealmDataOperations().saveRealmData(productInfo!, selectedSize: selectedSize, categoryID: categoryID)
         Persistence.shared.totalSavedPrice! += Int(productInfo!.price)
     }
     
@@ -175,7 +174,6 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
         let pageIndex = round (imageScroll.contentOffset.x / viewScroll.frame.width)
         itemImagePageControl.currentPage = Int (pageIndex)
     }
-    
     
     func addedToCart(){
         let viewconrollers = self.tabBarController?.viewControllers
@@ -202,15 +200,17 @@ extension ItemCardViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         tableView.deselectRow(at: indexPath, animated: true)
         sizeIsChoosenBool = true
-        
         selectedSize = sizes[indexPath.row]
-        sizeButton.setTitle("(\(selectedSize)) \(sizeButton.titleLabel!.text!)", for: UIControl.State.normal)
+        sizeButton.setTitle("(\(selectedSize)) Размеры", for: .normal)
+        sizeButton.sizeToFit()
         UIView.animate(withDuration: 0.6, animations: {
             self.sizeConstraint.constant = self.yCoord + self.sizeView.frame.height
             self.blur.alpha = 0
             self.view.layoutIfNeeded()
         })
-        addedToCart()
+        if !showSizes {
+            addedToCart()
+        }
     }
 }
 
