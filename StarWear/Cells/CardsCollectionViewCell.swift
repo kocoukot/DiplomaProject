@@ -1,9 +1,6 @@
 
 
 import UIKit
-import Alamofire
-import AlamofireImage
-import SVProgressHUD
 
 class CardsCollectionViewCell: UICollectionViewCell {
     

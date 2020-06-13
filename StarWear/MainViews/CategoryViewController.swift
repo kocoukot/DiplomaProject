@@ -7,11 +7,8 @@
 //
 
 import UIKit
-import RealmSwift
-
 
 class ViewController: UIViewController {
-    private let realm = try! Realm()
     
     private var urlString = "https://blackstarshop.ru/index.php?route=api/v1/categories"
     @IBOutlet weak var categoriesTableView: UITableView!
@@ -23,10 +20,8 @@ class ViewController: UIViewController {
             self.categories = categories
             self.categoriesTableView.reloadData()
         })
-        if let data = realm.objects(SaveProduct.self).count as? Int{
-            let viewconrollers = self.tabBarController?.viewControllers
-            viewconrollers![1].tabBarItem.badgeValue = data > 0 ? "\(data)" : nil
-        }
+        let viewconrollers = self.tabBarController?.viewControllers
+        viewconrollers![1].tabBarItem.badgeValue = RealmDataOperations().dataCount() > 0 ? "\(RealmDataOperations().dataCount())" : nil
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

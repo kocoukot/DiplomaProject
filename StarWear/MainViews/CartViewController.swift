@@ -1,10 +1,8 @@
 
 
 import UIKit
-import RealmSwift
 
 class CartViewController: UIViewController {
-    private let realm = try! Realm()
 
     @IBOutlet weak var buttomView: UIView!
     @IBOutlet weak var totalPriceLabel: UILabel!
@@ -41,14 +39,9 @@ extension CartViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete {
-            let data = realm.objects(SaveProduct.self)
-            Persistence.shared.totalSavedPrice! -= Int(data[indexPath.row].price)
+            Persistence.shared.totalSavedPrice! -= RealmDataOperations().removeFromRealm(row: indexPath.row)
             totalPriceLabel.text = "\(Persistence.shared.totalSavedPrice!) руб."
-            realm.beginWrite()
-            realm.delete(data[indexPath.row])
-            try! realm.commitWrite()
             tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
-            
             let viewconrollers = self.tabBarController?.viewControllers
             viewconrollers![1].tabBarItem.badgeValue = RealmDataOperations().dataCount() > 0 ? "\(RealmDataOperations().dataCount())" : nil
             

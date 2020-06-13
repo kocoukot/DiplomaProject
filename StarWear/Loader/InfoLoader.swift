@@ -1,6 +1,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 import SVProgressHUD
 
 
@@ -71,7 +72,6 @@ class CategoriesLoader{
                 }
                 SVProgressHUD.dismiss()
         }
-
     }
     
     private func requestItemCardsFunc(_ json: NSDictionary) -> [ItemCards]{

@@ -14,7 +14,6 @@ class ItemsCollectionViewController: UIViewController {
     var mainImageTemp: UIImage?
     var nameForSize = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewTitle

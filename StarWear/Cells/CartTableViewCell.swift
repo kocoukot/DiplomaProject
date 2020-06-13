@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 class CartTableViewCell: UITableViewCell {
     private let realm = try! Realm()
@@ -24,7 +23,7 @@ class CartTableViewCell: UITableViewCell {
     }
     
     func infoCellSet(index: Int){
-        RealmDataOperations().setLabelInfo(index: index, sizeLabel: sizeLabel,productNameLabel: productNameLabel,productPriceLabel: productPriceLabel,productOldPriceLabel:productOldPriceLabel, productImageView:productImageView)
+        RealmDataOperations().setLabelInfoInCart(index: index, sizeLabel: sizeLabel,productNameLabel: productNameLabel,productPriceLabel: productPriceLabel,productOldPriceLabel:productOldPriceLabel, productImageView:productImageView)
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

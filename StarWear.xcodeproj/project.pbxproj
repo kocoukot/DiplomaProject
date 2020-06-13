@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		3A2431762476B14000AB988A /* PersistRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431752476B14000AB988A /* PersistRealm.swift */; };
 		3A2431782477E5EA00AB988A /* CommonFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431772477E5EA00AB988A /* CommonFuncs.swift */; };
-		3A24317D248003BC00AB988A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A24317C248003BC00AB988A /* ModalViewController.swift */; };
 		3A2431812481282A00AB988A /* SizesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2431802481282A00AB988A /* SizesTableViewCell.swift */; };
 		3A270D07247693F1002DBDE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D06247693F1002DBDE2 /* AppDelegate.swift */; };
 		3A270D09247693F1002DBDE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D08247693F1002DBDE2 /* SceneDelegate.swift */; };
-		3A270D0B247693F1002DBDE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D0A247693F1002DBDE2 /* ViewController.swift */; };
+		3A270D0B247693F1002DBDE2 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D0A247693F1002DBDE2 /* CategoryViewController.swift */; };
 		3A270D11247693F1002DBDE2 /* StarWear.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A270D0F247693F1002DBDE2 /* StarWear.xcdatamodeld */; };
 		3A270D13247693F2002DBDE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A270D12247693F2002DBDE2 /* Assets.xcassets */; };
 		3A270D16247693F2002DBDE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A270D14247693F2002DBDE2 /* LaunchScreen.storyboard */; };
@@ -65,12 +64,11 @@
 /* Begin PBXFileReference section */
 		3A2431752476B14000AB988A /* PersistRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistRealm.swift; sourceTree = "<group>"; };
 		3A2431772477E5EA00AB988A /* CommonFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFuncs.swift; sourceTree = "<group>"; };
-		3A24317C248003BC00AB988A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		3A2431802481282A00AB988A /* SizesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizesTableViewCell.swift; sourceTree = "<group>"; };
 		3A270D03247693F1002DBDE2 /* StarWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A270D06247693F1002DBDE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A270D08247693F1002DBDE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A270D0A247693F1002DBDE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A270D0A247693F1002DBDE2 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		3A270D10247693F1002DBDE2 /* StarWear.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StarWear.xcdatamodel; sourceTree = "<group>"; };
 		3A270D12247693F2002DBDE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A270D15247693F2002DBDE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 				3A270D5F247694D9002DBDE2 /* CategoryTableViewCell.swift */,
 				3A270D5C247694D9002DBDE2 /* CardsCollectionViewCell.swift */,
 				3A270D5A247694D9002DBDE2 /* CartTableViewCell.swift */,
-				3A2431772477E5EA00AB988A /* CommonFuncs.swift */,
 				3A2431802481282A00AB988A /* SizesTableViewCell.swift */,
 			);
 			path = Cells;
@@ -160,23 +157,17 @@
 		3A270D05247693F1002DBDE2 /* StarWear */ = {
 			isa = PBXGroup;
 			children = (
+				3A7079AD2490EA8F00403419 /* MainViews */,
+				3A7079AC2490EA3E00403419 /* CommonFuncs */,
+				3A7079AB2490E94E00403419 /* Loader */,
 				3A2431742476992700AB988A /* Cells */,
 				3A270D06247693F1002DBDE2 /* AppDelegate.swift */,
-				3A24317C248003BC00AB988A /* ModalViewController.swift */,
 				3A270D08247693F1002DBDE2 /* SceneDelegate.swift */,
 				3A270D53247694C3002DBDE2 /* Main.storyboard */,
 				3A270D12247693F2002DBDE2 /* Assets.xcassets */,
 				3A270D14247693F2002DBDE2 /* LaunchScreen.storyboard */,
-				3A270D55247694D0002DBDE2 /* InformationDictionary.swift */,
-				3A270D56247694D0002DBDE2 /* InfoLoader.swift */,
 				3A270D17247693F2002DBDE2 /* Info.plist */,
 				3A270D0F247693F1002DBDE2 /* StarWear.xcdatamodeld */,
-				3A270D0A247693F1002DBDE2 /* ViewController.swift */,
-				3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */,
-				3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */,
-				3A270D59247694D8002DBDE2 /* ItemCardViewController.swift */,
-				3A270D5B247694D9002DBDE2 /* CartViewController.swift */,
-				3A2431752476B14000AB988A /* PersistRealm.swift */,
 			);
 			path = StarWear;
 			sourceTree = "<group>";
@@ -197,6 +188,36 @@
 				3A270D2D247693F2002DBDE2 /* Info.plist */,
 			);
 			path = StarWearUITests;
+			sourceTree = "<group>";
+		};
+		3A7079AB2490E94E00403419 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				3A270D55247694D0002DBDE2 /* InformationDictionary.swift */,
+				3A270D56247694D0002DBDE2 /* InfoLoader.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		3A7079AC2490EA3E00403419 /* CommonFuncs */ = {
+			isa = PBXGroup;
+			children = (
+				3A2431772477E5EA00AB988A /* CommonFuncs.swift */,
+				3A2431752476B14000AB988A /* PersistRealm.swift */,
+			);
+			path = CommonFuncs;
+			sourceTree = "<group>";
+		};
+		3A7079AD2490EA8F00403419 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				3A270D0A247693F1002DBDE2 /* CategoryViewController.swift */,
+				3A270D5E247694D9002DBDE2 /* SubCategoryViewController.swift */,
+				3A270D5D247694D9002DBDE2 /* ItemsCollectionViewController.swift */,
+				3A270D59247694D8002DBDE2 /* ItemCardViewController.swift */,
+				3A270D5B247694D9002DBDE2 /* CartViewController.swift */,
+			);
+			path = MainViews;
 			sourceTree = "<group>";
 		};
 		52F7D307EF2F5B570EA1F817 /* Pods */ = {
@@ -398,7 +419,7 @@
 				3A270D65247694D9002DBDE2 /* SubCategoryViewController.swift in Sources */,
 				3A270D60247694D9002DBDE2 /* ItemCardViewController.swift in Sources */,
 				3A2431762476B14000AB988A /* PersistRealm.swift in Sources */,
-				3A270D0B247693F1002DBDE2 /* ViewController.swift in Sources */,
+				3A270D0B247693F1002DBDE2 /* CategoryViewController.swift in Sources */,
 				3A270D07247693F1002DBDE2 /* AppDelegate.swift in Sources */,
 				3A270D11247693F1002DBDE2 /* StarWear.xcdatamodeld in Sources */,
 				3A270D57247694D0002DBDE2 /* InformationDictionary.swift in Sources */,
@@ -407,7 +428,6 @@
 				3A270D09247693F1002DBDE2 /* SceneDelegate.swift in Sources */,
 				3A270D62247694D9002DBDE2 /* CartViewController.swift in Sources */,
 				3A270D66247694D9002DBDE2 /* CategoryTableViewCell.swift in Sources */,
-				3A24317D248003BC00AB988A /* ModalViewController.swift in Sources */,
 				3A270D61247694D9002DBDE2 /* CartTableViewCell.swift in Sources */,
 				3A2431812481282A00AB988A /* SizesTableViewCell.swift in Sources */,
 				3A2431782477E5EA00AB988A /* CommonFuncs.swift in Sources */,

@@ -32,7 +32,6 @@ class SubCategoryViewController: UIViewController {
     }
 }
 
-
 extension SubCategoryViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{

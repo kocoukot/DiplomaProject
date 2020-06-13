@@ -8,8 +8,6 @@
 
 import Foundation
 import UIKit
-import AlamofireImage
-import Alamofire
 
 class CommonHelpFuncs{
     
@@ -60,5 +58,15 @@ class CommonHelpFuncs{
             }
         }
         return sizes
+    }
+    
+    
+    func setButtonShadow(button: UIButton){
+        button.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        button.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        button.layer.shadowOpacity = 1.0
+        button.layer.shadowRadius = 0.0
+        button.layer.masksToBounds = false
+        button.layer.cornerRadius = 4.0
     }
 }

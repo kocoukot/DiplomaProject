@@ -7,12 +7,8 @@
 //
 
 import UIKit
-import RealmSwift
-
-
 
 class ItemCardViewController: UIViewController, UIScrollViewDelegate {
-    private let realm = try! Realm()
     
     @IBOutlet weak var itemPriceLabel: UILabel!
     @IBOutlet weak var itemOldPriceLabel: UILabel!
@@ -47,7 +43,7 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
     var urlImageList: [String] = []
     private var sizeIsChoosenBool = false
     private var hasSizes = true
-    private var showSizes = true
+    private var showSizesBool = true
     var selectedSize = ""
     var categoryID = ""
     let yCoord = UIScreen.main.bounds.size.height
@@ -68,6 +64,7 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
         imageScroll.delegate = self
         self.title = productInfo?.name
         
+        CommonHelpFuncs().setButtonShadow(button: self.addToCartButton)
         addToCartButton.layer.cornerRadius = 5
         tagView.layer.cornerRadius = tagView.frame.width / 2 - 10
         sizeButton.isHidden = false
@@ -135,11 +132,24 @@ class ItemCardViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func chooseSizeButton(_ sender: Any) {
         sizesShow()
-        showSizes = true
+        showSizesBool = true
     }
     
+    
+    @IBAction func touchDownEvetnt(_ sender: Any) {
+        UIView.animate(withDuration: 0.2, animations: {
+        self.addToCartButton.backgroundColor = UIColor(red: 0.173, green: 0.632, blue: 0.845, alpha: 1)
+        self.addToCartButton.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)})
+    }
+    
+    
     @IBAction func addToCart(_ sender: Any) {
-        showSizes = false
+        addToCartButton.tintColor = UIColor.white
+        UIView.animate(withDuration: 0.2, animations: {
+            self.addToCartButton.backgroundColor = UIColor(red: 0, green: 0.478, blue: 1, alpha: 1)
+            CommonHelpFuncs().setButtonShadow(button: self.addToCartButton)
+        })
+        showSizesBool = false
         if !hasSizes{
             addedToCart()
         } else if sizeIsChoosenBool{
@@ -208,7 +218,7 @@ extension ItemCardViewController: UITableViewDataSource, UITableViewDelegate{
             self.blur.alpha = 0
             self.view.layoutIfNeeded()
         })
-        if !showSizes {
+        if !showSizesBool {
             addedToCart()
         }
     }

@@ -38,7 +38,7 @@ class RealmDataOperations{
         return itemsAmount
     }
     
-    func setLabelInfo(index: Int,sizeLabel: UILabel, productNameLabel: UILabel,productPriceLabel: UILabel,productOldPriceLabel: UILabel, productImageView: UIImageView){
+    func setLabelInfoInCart(index: Int,sizeLabel: UILabel, productNameLabel: UILabel,productPriceLabel: UILabel,productOldPriceLabel: UILabel, productImageView: UIImageView){
         if realm.objects(SaveProduct.self) != nil{
             let data = realm.objects(SaveProduct.self)
             if data[index].size != "" {
@@ -75,6 +75,15 @@ class RealmDataOperations{
         try! realm.write{
             realm.add(saveProduct)
         }
+    }
+    
+    func removeFromRealm(row: Int) -> Int {
+        let data = realm.objects(SaveProduct.self)
+        let price = data[row].price
+        realm.beginWrite()
+        realm.delete(data[row])
+        try! realm.commitWrite()
+        return Int(price)
     }
     
 }
