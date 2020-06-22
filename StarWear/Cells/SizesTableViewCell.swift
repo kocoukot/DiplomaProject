@@ -24,7 +24,7 @@ class SizesTableViewCell: UITableViewCell {
         amountLabel.isHidden = true
         isUserInteractionEnabled = false
         sizeLabel.text = allSizes
-        for i in 0..<(sizesHave.count){
+        for i in 0..<sizesHave.count{
             var amount = 0
             if sizesHave[i].sizeQuantity > 0 {
                 amount = sizesHave[i].sizeQuantity as Int

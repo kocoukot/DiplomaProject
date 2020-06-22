@@ -9,7 +9,6 @@
 import UIKit
 
 class CartTableViewCell: UITableViewCell {
-    private let realm = try! Realm()
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
